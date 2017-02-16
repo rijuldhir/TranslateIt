@@ -29,8 +29,8 @@ public class NumbersActivity extends AppCompatActivity {
         words.add(new Words("nine", "wo’e",R.drawable.number_nine));
         words.add(new Words("ten", "na’aacha",R.drawable.number_ten));
         words.add(new Words("ten",""));
-        words.add(new Words("ten",""));
-        words.add(new Words("ten",""));
+        words.add(new Words("ten","",R.mipmap.ic_launcher));
+        words.add(new Words("ten","",R.mipmap.ic_launcher));
         words.add(new Words("ten",""));
 
         for(int i=0;i<2;i++)
