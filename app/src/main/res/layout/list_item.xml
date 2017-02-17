@@ -3,8 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="horizontal" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="16dp"
+    android:layout_marginLeft="16dp"
     android:paddingBottom="16dp"
+    android:backgroundTint="@color/category_numbers"
+    android:background="@color/category_numbers"
     >
 
     <ImageView
@@ -13,7 +15,7 @@
         android:id="@+id/image1"
         android:paddingTop="16dp"
         android:paddingRight="16dp"
-        android:src="@mipmap/ic_launcher"
+
         />
     <LinearLayout
         android:layout_width="wrap_content"
