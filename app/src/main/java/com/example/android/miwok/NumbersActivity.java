@@ -42,10 +42,9 @@ public class NumbersActivity extends AppCompatActivity {
             word.setText(words.get(i));
             rootview.addView(word);
         }*/
-        WordAdapter adapter = new WordAdapter(this, words);
+        WordAdapter adapter = new WordAdapter(this, words,R.color.category_numbers);
 
         ListView listView = (ListView) findViewById(R.id.list);
-
         listView.setAdapter(adapter);
     }
 }

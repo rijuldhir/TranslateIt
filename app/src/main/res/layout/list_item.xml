@@ -3,10 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="horizontal" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginLeft="16dp"
-    android:paddingBottom="16dp"
-    android:backgroundTint="@color/category_numbers"
-    android:background="@color/category_numbers"
+    android:background="@color/tan_background"
+    android:minHeight="@dimen/list_item_height"
     >
 
     <ImageView
@@ -18,10 +16,13 @@
 
         />
     <LinearLayout
+        android:layout_weight="2"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/textcontainer"
+        android:layout_height="match_parent"
         android:orientation="vertical"
-
+        android:paddingLeft="16dp"
+        android:background="@color/category_numbers"
         >
 
     <TextView
@@ -29,15 +30,20 @@
         android:layout_width="match_parent"
         tools:text="lutti"
         android:paddingTop="16dp"
-        android:layout_height="wrap_content"
-
+        android:textColor="#ffffff"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom"
         android:id="@+id/textView" />
 
     <TextView
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:text="TextView"
         android:id="@+id/textView2"
         android:layout_width="match_parent"
+        android:textColor="#ffffff"
+        android:gravity="top"
         android:paddingTop="4dp"
         tools:text="one"/>
 
