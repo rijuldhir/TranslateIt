@@ -47,8 +47,10 @@ public class WordAdapter extends ArrayAdapter<Words> {
         MiwokImageView.setVisibility(View.GONE);
 
         View textcont = listItemView.findViewById(R.id.textcontainer);
+        View play = listItemView.findViewById(R.id.play);
         int Color = ContextCompat.getColor(getContext(),color);
         textcont.setBackgroundColor(Color);
+        play.setBackgroundColor(Color);
         return listItemView;
     }
 

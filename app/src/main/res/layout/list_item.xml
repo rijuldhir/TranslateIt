@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/tan_background"
     android:minHeight="@dimen/list_item_height"
+    android:drawSelectorOnTop="true"
     >
 
     <ImageView
@@ -47,4 +48,12 @@
         tools:text="one"/>
 
     </LinearLayout>
+    <ImageView
+        android:id="@+id/play"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingRight="16dp"
+        android:src="@drawable/ic_play_arrow"
+        android:layout_gravity="center_vertical"
+        />
     </LinearLayout>

@@ -15,16 +15,16 @@ public class ColorsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_colors);
 
         ArrayList<Words> words = new ArrayList<Words>();
-        words.add(new Words("one", "lutti"));
-        words.add(new Words("two", "otiiko"));
-        words.add(new Words("three", "tolookosu"));
-        words.add(new Words("four", "oyyisa"));
-        words.add(new Words("five", "massokka"));
-        words.add(new Words("six", "temmokka"));
-        words.add(new Words("seven", "kenekaku"));
-        words.add(new Words("eight", "kawinta"));
-        words.add(new Words("nine", "wo’e"));
-        words.add(new Words("ten", "na’aacha"));
+        words.add(new Words("one", "lutti",R.drawable.number_one,R.raw.number_one));
+        words.add(new Words("two", "otiiko",R.drawable.number_two,R.raw.number_two));
+        words.add(new Words("three", "tolookosu",R.drawable.number_three,R.raw.number_three));
+        words.add(new Words("four", "oyyisa",R.drawable.number_four,R.raw.number_four));
+        words.add(new Words("five", "massokka",R.drawable.number_five,R.raw.number_five));
+        words.add(new Words("six", "temmokka",R.drawable.number_six,R.raw.number_six));
+        words.add(new Words("seven", "kenekaku",R.drawable.number_seven,R.raw.number_seven));
+        words.add(new Words("eight", "kawinta",R.drawable.number_eight,R.raw.number_eight));
+        words.add(new Words("nine", "wo’e",R.drawable.number_nine,R.raw.number_nine));
+        words.add(new Words("ten", "na’aacha",R.drawable.number_ten,R.raw.number_ten));
         words.add(new Words("ten",""));
         words.add(new Words("ten",""));
         words.add(new Words("ten",""));
