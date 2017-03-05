@@ -17,12 +17,13 @@ package com.example.android.miwok;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.TabLayout;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import static com.example.android.miwok.R.id.numbers;
 
 public class MainActivity extends AppCompatActivity  {
 
@@ -32,17 +33,17 @@ public class MainActivity extends AppCompatActivity  {
 
         // Set the content of the activity to use the activity_main.xml layout file
         setContentView(R.layout.activity_main);
-        TextView number = (TextView) findViewById(R.id.numbers);
+        ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
 
-        number.setOnClickListener(new View.OnClickListener() {
-            // The code in this method will be executed when the numbers View is clicked on.
-            @Override
-            public void onClick(View view) {
-                //Toast.makeText(MainActivity.this,"Hi Rijul",Toast.LENGTH_LONG);
-                Intent numbersIntent = new Intent(MainActivity.this, NumbersActivity.class);
-                startActivity(numbersIntent);
-            }
-        });
+        // Create an adapter that knows which fragment should be shown on each page
+        SimpleFragmentPagerAdapter adapter = new SimpleFragmentPagerAdapter(getSupportFragmentManager(),this);
+
+        // Set the adapter onto the view pager
+        viewPager.setAdapter(adapter);
+
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.sliding_tabs);
+        tabLayout.setupWithViewPager(viewPager);
+
     }
 
     public void OpenFamily(View view) {
